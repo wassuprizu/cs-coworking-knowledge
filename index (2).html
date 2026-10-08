@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>База знаний CS Coworking</title>
+<style>
+:root{--ink:#20312f;--muted:#5d706c;--navy:#245b55;--paper:#f4f7f3;--card:#fff;--line:#dce7df;--focus:#358d78;--shadow:0 8px 24px rgba(34,65,58,.07)}
+@media(prefers-color-scheme:dark){:root{--ink:#e8f0eb;--muted:#adbbb4;--navy:#9bcbb9;--paper:#151e1b;--card:#1d2924;--line:#34463d;--shadow:0 8px 24px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 "Segoe UI",Arial,sans-serif}a{color:var(--navy)}:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
+.top{position:sticky;top:0;z-index:10;background:var(--navy);color:white;padding:13px 20px;box-shadow:0 3px 16px rgba(27,59,52,.14)}.top-inner{max-width:1100px;margin:auto;display:flex;gap:16px;align-items:center;flex-wrap:wrap}.brand{font-weight:800;font-size:18px;margin-right:auto;color:white;text-decoration:none}.nav{display:flex;gap:4px;flex-wrap:wrap}.nav a{color:#e7f3ed;text-decoration:none;font-weight:600;font-size:14px;padding:7px 11px;border-radius:8px}.nav a:hover{background:rgba(255,255,255,.13)}main{max-width:1100px;margin:auto;padding:0 20px 64px}section{padding-top:52px}h1{font-size:clamp(32px,5vw,48px);line-height:1.13;margin:0 0 14px;letter-spacing:-.03em}h2{font-size:29px;line-height:1.25;margin:0 0 10px;letter-spacing:-.02em}h3{font-size:19px;line-height:1.35;margin:0}.lead{color:var(--muted);max-width:70ch;margin:0 0 24px}.hero{padding:64px 0 8px}.search{max-width:680px}.search input{width:100%;font:inherit;font-size:18px;padding:16px 18px;border-radius:14px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);box-shadow:var(--shadow)}.search input:focus{outline:3px solid color-mix(in srgb,var(--focus) 24%,transparent);border-color:var(--focus)}.hint{color:var(--muted);font-size:14px;margin-top:8px}.quick{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.quick a{text-decoration:none;font-weight:650;padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);box-shadow:0 2px 8px rgba(34,65,58,.04)}.quick a:hover{border-color:var(--focus);color:var(--navy)}
+.dept{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c);border-radius:14px;padding:24px 26px;margin-bottom:18px;box-shadow:var(--shadow)}.dept-head{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin-bottom:7px}.dot{width:10px;height:10px;border-radius:50%;background:var(--c);flex:none}.desc{color:var(--muted);margin:0 0 14px;max-width:75ch}.folder{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:14px 0;border-top:1px solid var(--line)}.folder-name{font-weight:700}.folder-note{color:var(--muted);font-size:14px;line-height:1.55;margin-top:2px;max-width:74ch}.btn{flex:none;text-decoration:none;font-weight:700;font-size:14px;color:#fff;background:var(--c,var(--navy));padding:10px 15px;border-radius:9px;white-space:nowrap}.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}.note{font-size:14px;margin:12px 0 0;padding:12px 15px;border-radius:10px;background:color-mix(in srgb,var(--navy) 8%,var(--paper));color:var(--ink)}.days{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.day{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}.day b{display:block;color:var(--navy);font-size:13px;margin-bottom:5px;text-transform:uppercase;letter-spacing:.04em}.day ul{margin:8px 0 0;padding-left:19px}.table-wrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}table{border-collapse:collapse;width:100%;min-width:560px}th,td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}tr:last-child td{border-bottom:none}.rules{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px 24px;box-shadow:var(--shadow)}.rules li{padding:8px 0}footer{color:var(--muted);font-size:14px;margin-top:48px;padding-bottom:20px}.empty{color:var(--muted);display:none;padding:20px 0}@media(max-width:640px){.nav{display:none}.folder{flex-direction:column;align-items:flex-start}.dept{padding:20px}.hero{padding-top:42px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-inner"><a class="brand" href="#top">База знаний CS Coworking</a><nav class="nav" aria-label="Разделы"><a href="#new">Новичку</a><a href="#depts">Отделы</a><a href="#contacts">Кому писать</a><a href="#rules">Правила</a></nav></div></header>
+<main id="top">
+<section class="hero"><h1>Где что лежит</h1><p class="lead">Навигатор по папкам и материалам Общего диска Битрикс24. Выберите отдел или найдите папку по названию и типовой задаче. Ссылка ведёт прямо в соответствующий раздел диска; доступ зависит от ваших прав в Битрикс24.</p><div class="search"><input id="q" type="search" placeholder="Например: договор, найм, продление, почта…" aria-label="Поиск по разделам"><div class="hint">Поиск ищет по названию отдела, папки и пояснению.</div></div><div class="quick"><a href="#new">Я новый сотрудник</a><a href="#depts">Документы моего отдела</a><a href="#contacts">К кому обратиться</a></div></section>
+<section id="new"><h2>С чего начать</h2><p class="lead">Откройте материалы в таком порядке. Если нужная папка закрыта, попросите руководителя отдела проверить доступ.</p><div class="days"><article class="day"><b>Шаг 1 · Ориентирование</b><h3>Найдите свой отдел</h3><ul><li>Используйте поиск ниже или выберите отдел в разделе «Отделы».</li><li>В HR есть файл «План первого дня стажировки» и содержание базы знаний. В продажах откройте содержание базы Клоузера или Фармера.</li></ul></article><article class="day"><b>Шаг 2 · Рабочий процесс</b><h3>Откройте профильный блок</h3><ul><li>Продажи: МОП Клоузер — первичная работа с новыми клиентами; МОП Фармер — действующие клиенты.</li><li>Сервис: выберите этап процесса — договор, корреспонденция, счёт или пролонгация.</li><li>HR: найм, оформление, адаптация и кадровые формы.</li></ul></article><article class="day"><b>Шаг 3 · Первый вопрос</b><h3>Уточните у коллег</h3><ul><li>Проверьте пояснение к папке и её содержание.</li><li>При отсутствии инструкции обратитесь к ответственному за процесс или руководителю отдела.</li></ul></article></div></section>
+<section id="depts"><h2>Отделы и материалы</h2><p class="lead">Названия и расположение сверены с папками CS COWORKING в Битрикс24. Краткие пояснения помогают выбрать направление; состав документов внутри папок может обновляться.</p><div id="dept-list"></div><div id="empty" class="empty">По этому запросу разделов не найдено.</div></section>
+<section id="contacts"><h2>Кому писать</h2><p class="lead">Контакты перенесены из предоставленного примера. Перед публикацией проверьте актуальность телефонов и ответственных.</p><div class="table-wrap"><table><thead><tr><th>Вопрос</th><th>К кому</th><th>Контакт</th></tr></thead><tbody id="contact-rows"></tbody></table></div></section>
+<section id="rules"><h2>Правила работы с базой</h2><ul class="rules"><li>Перед использованием шаблона проверьте, что открыли нужный отдел и актуальную версию файла.</li><li>Договоры и нестандартные юридические формулировки согласуйте с юридическим отделом до отправки клиенту или подписания.</li><li>Права на документы задаются в Битрикс24: ссылка в навигаторе сама по себе не предоставляет доступ.</li><li>При добавлении или переносе материалов обновляйте ссылку и пояснение в навигаторе.</li></ul></section>
+<footer id="footer">Навигатор подготовлен по текущему содержимому папок CS COWORKING. Содержание самих документов и права доступа могут меняться.</footer>
+</main>
+<script>
+const BASE="https://support24.bitrix24.kz/docs/path/CS%20COWORKING/";
+const url=(...parts)=>BASE+parts.map(encodeURIComponent).join("/")+"/";
+const DEPARTMENTS=[
+ {name:"Отдел продаж",color:"#2E8B57",desc:"Материалы менеджеров по продажам разделены по типу клиента: новые клиенты и действующая клиентская база.",folders:[
+  {name:"МОП Клоузер",note:"Первичный цикл: папки «Регистрация», «Скрипты», «Инструменты», «Продукт» и файл содержания базы знаний.",path:["База знаний Отдела Продаж","МОП Клоузер"]},
+  {name:"МОП Фармер",note:"Работа с действующими клиентами: папки «Юридический адрес ДОГОВОРА Скан», «Продукт», «Скрипты», «Инструменты» и файл содержания базы знаний.",path:["База знаний Отдела Продаж","МОП Фармер"]}
+ ]},
+ {name:"Сервисный отдел",color:"#E07A1F",desc:"Папки сгруппированы по этапам обслуживания клиента и документооборота.",folders:[
+  {name:"Этап: чек-лист",note:"Проверочный список этапа обслуживания.",path:["База знаний Сервисный отдел","этап чек-лист"]},
+  {name:"Этап: договор",note:"Материалы этапа оформления договора.",path:["База знаний Сервисный отдел","этап договор"]},
+  {name:"Новый договор и исходящие письма",note:"Материалы по новым договорам и исходящей корреспонденции.",path:["База знаний Сервисный отдел","нов дог и исх письма"]},
+  {name:"Этап: корреспонденция",note:"Порядок работы с перепиской клиента.",path:["База знаний Сервисный отдел","этап корресп"]},
+  {name:"Этап: счёт на оплату",note:"Материалы по выставлению и отправке счёта.",path:["База знаний Сервисный отдел","этап счет на оплату"]},
+  {name:"Этап: пролонгация",note:"Материалы по продлению договора.",path:["База знаний Сервисный отдел","этап пролонг"]},
+  {name:"Отправка письма",note:"Инструкции или шаблоны отправки писем.",path:["База знаний Сервисный отдел","отправка письма"]},
+  {name:"Google Таблицы",note:"Рабочие таблицы сервиса; откройте папку и проверьте актуальное назначение файла.",path:["База знаний Сервисный отдел","Гугл таблицы"]},
+  {name:"Содержание БЗ офис-менеджера.xlsx",note:"Файл-оглавление материалов сервисного/офис-менеджерского блока.",file:["База знаний Сервисный отдел","Содержание БЗ Офис Менеджер.xlsx"]}
+ ]},
+ {name:"Юридический отдел",color:"#C0392B",desc:"Договорная работа, документы по регистрации в МФЦА, чек-листы, коммерческие предложения и обучающие материалы.",folders:[
+  {name:"Договорная база",note:"Внутри обнаружены регламент взаимодействия бухгалтерии и юристов, регламент сопровождения клиента, договор аренды мебели, месячные и годовые шаблоны договоров (в том числе с плательщиком и переводы EN–RU), допсоглашения, гарантийное письмо, а также уведомления о продлении и прекращении услуг.",path:["База знаний Юр Отдел","ДОГОВОРНАЯ БАЗА"]},
+  {name:"Чек-листы",note:"Проверочные списки для юридических процессов.",path:["База знаний Юр Отдел","Чек листы"]},
+  {name:"Регистрация в МФЦА: документы",note:"Пакет и материалы, связанные с регистрацией в МФЦА.",path:["База знаний Юр Отдел","регистрация в мфца документы"]},
+  {name:"Коммерческие предложения",note:"Материалы и шаблоны коммерческих предложений.",path:["База знаний Юр Отдел","Коммерческие предложение"]},
+  {name:"Общие сведения об AIFC и AFSA",note:"Справочные материалы об организациях и правовом контексте.",path:["База знаний Юр Отдел","Общие сведение о AIFC, AFSA"]},
+  {name:"Обучение и разъяснительные материалы",note:"Внутренние пояснения и обучающие документы; также есть файл содержания базы знаний.",path:["База знаний Юр Отдел","Обучение и разъяснительные материалы"]}
+ ],important:"Любой договор, который отличается от утверждённого шаблона, согласуйте с юристом до подписания."},
+ {name:"HR и кадры",color:"#1A8C8C",desc:"Подбор, оформление сотрудников, адаптация и обратная связь. В корне базы есть файл «Содержание БЗ HR Отдел».",folders:[
+  {name:"Найм и подбор",note:"Папки «Процесс принятия» и «Вакансии», схема найма/адаптации/увольнения, регламент, тексты вакансий, каналы поиска, воронка, портрет и профиль должности, анкеты и листы интервью/оценки кандидатов.",path:["База знаний HR-служба","Найм и Подбор"]},
+  {name:"Оформление и адаптация",note:"Раздел по оформлению нового сотрудника и его введению в работу.",path:["База знаний HR-служба","Оформление и адаптация"]},
+  {name:"Формы документов",note:"В папке есть перечень документов для трудоустройства, анкета и заявление о приёме, личный листок, согласия, заявление на отпуск, отпуск без содержания, формы налоговых вычетов, табель, график отпусков, обходной лист, бланк звонка кандидату и шаблон документа об увольнении за прогул. Работайте с кадровыми файлами только в рамках своих задач и прав доступа.",path:["База знаний HR-служба","Формы документов"]},
+  {name:"Проект должностных инструкций и положений",note:"Проектные должностные инструкции и положения; проверяйте статус документа перед применением.",path:["База знаний HR-служба","Проект ДИ и положение"]},
+  {name:"eNPS",note:"Материалы по сбору и работе с eNPS.",path:["База знаний HR-служба","eNPS"]}
+ ]},
+ {name:"Бухгалтерия",color:"#C98A0B",desc:"В базе отдела обнаружен раздел с регламентами.",folders:[{name:"Регламенты",note:"Правила и порядок бухгалтерских процессов. Внутренний состав документов уточняется при открытии папки.",path:["База Знаний Бух Отдел","Регламенты"]}]},
+];
+const CONTACTS=[
+ ["Согласование договора, юридические вопросы","Юрист — [ФИО]","[чат или задача в Битрикс24]"],
+ ["Оплата, счета, акты","Бухгалтерия — Сыздыкова Кульшарат Канивена","+7 701 774 1133"],
+ ["Отпуск, документы, кадровые вопросы","HR — Нуртазина Айгуль","+7 700 555 3108"],
+ ["Клиенты, продажи, КП","Отдел продаж — Жаксыбаев Куаныш","+7 700 700 0405"],
+ ["Обслуживание клиентов, корреспонденция","Сервисный отдел — Ниазбекова Гульнара","+7 700 339 3665"],
+ ["Общие вопросы по работе","Операционный директор — Аманегельдинов Ержан","+7 777 034 4477"]
+];
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function fileUrl(parts){return "https://support24.bitrix24.kz/docs/file/CS%20COWORKING/"+parts.map(encodeURIComponent).join("/")}
+function render(){document.getElementById("dept-list").innerHTML=DEPARTMENTS.map((d,i)=>`<article class="dept" style="--c:${d.color}" data-i="${i}"><div class="dept-head"><span class="dot"></span><h3>${esc(d.name)}</h3></div><p class="desc">${esc(d.desc)}</p>${d.folders.map(f=>{const href=f.path?url(...f.path):fileUrl(f.file);return `<div class="folder" data-text="${esc((d.name+" "+f.name+" "+f.note).toLowerCase())}"><div><div class="folder-name">${esc(f.name)}</div><div class="folder-note">${esc(f.note)}</div></div><a class="btn" href="${esc(href)}" target="_blank" rel="noopener">Открыть в Битрикс24</a></div>`}).join("")}${d.important?`<p class="note">${esc(d.important)}</p>`:""}</article>`).join("");document.getElementById("contact-rows").innerHTML=CONTACTS.map(r=>`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td><td>${esc(r[2])}</td></tr>`).join("")}
+function search(q){q=q.trim().toLowerCase();let any=false;document.querySelectorAll(".dept").forEach(card=>{const d=DEPARTMENTS[card.dataset.i],deptMatch=(d.name+" "+d.desc).toLowerCase().includes(q);let shown=0;card.querySelectorAll(".folder").forEach(f=>{const ok=!q||deptMatch||f.dataset.text.includes(q);f.style.display=ok?"":"none";if(ok)shown++});const visible=!q||deptMatch||shown>0;card.style.display=visible?"":"none";if(visible)any=true});document.getElementById("empty").style.display=any?"none":"block"}
+render();document.getElementById("q").addEventListener("input",e=>search(e.target.value));document.getElementById("q").addEventListener("keydown",e=>{if(e.key==="Enter")document.getElementById("depts").scrollIntoView({block:"start"})});
+</script>
+</body>
+</html>
+
+
